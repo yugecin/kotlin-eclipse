@@ -14,7 +14,9 @@ Bundle-ClassPath: .,
  lib/kotlin-reflect.jar,
  ../kotlin-eclipse-ui-test/lib/gson-2.3.1.jar,
  lib/kotlin-formatter.jar,
- lib/ide-dependencies.jar
+ lib/ide-dependencies.jar,
+ lib/kotlinx-coroutines-core.jar,
+ lib/kotlinx-coroutines-jdk8.jar
 Export-Package: 
  com.intellij,
  com.intellij.codeInsight,
@@ -177,6 +179,9 @@ Export-Package:
  kotlin.collections,
  kotlin.comparisons,
  kotlin.concurrent,
+ kotlin.coroutines,
+ kotlin.coroutines.intrinsics,
+ kotlin.coroutines.jvm.internal,
  kotlin.internal;x-internal:=true,
  kotlin.io,
  kotlin.jvm,
@@ -194,6 +199,7 @@ Export-Package:
  kotlin.script.templates.standard,
  kotlin.sequences,
  kotlin.text,
+ kotlinx.coroutines,
  org.jetbrains.annotations,
  org.jetbrains.kotlin,
  org.jetbrains.kotlin.analyzer,
