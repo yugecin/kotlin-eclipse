@@ -30,6 +30,9 @@ public class LineEndUtil {
     public static final String NEW_LINE_STRING = Character.toString(NEW_LINE_CHAR);
     
     public static int convertLfToDocumentOffset(@NotNull String lfText, int lfOffset, @NotNull IDocument document) {
+        if (document == null) {
+            return lfOffset;
+        }
         String documentLineDelimiter = TextUtilities.getDefaultLineDelimiter(document);
         if (documentLineDelimiter.length() == 1) {
             return lfOffset;
